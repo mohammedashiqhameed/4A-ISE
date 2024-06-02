@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function a()
+        {
+            alert("Your order is accepted")
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BookStore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="form-inline ml-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+<!-- Book Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/51xwFZin4pL._AC_UF1000,1000_QL80_.jpg" class="img-fluid" alt="Book 1" height="100" width="300" >
+        </div>
+        <div class="col-md-8">
+            <h2>A story of struggle</h2>
+            <p>Author : Ashok Kumawat</p>
+            <p>Price: $10.99</p>
+            <p>The story describes the life struggle of a teenager boy. The boy belongs to a poor family and falls in love with a beautiful girl. But the girl's father wants to marry her to a rich boy. Hence, that boy goes to the city to become rich and this is where his struggle starts.</p>
+            <button class="btn btn-primary"onclick="a()">Buy Now</button>
+        </div>
+    </div>
+</div>
+  <!-- Customer Reviews -->
+  <div class="mt-5">
+    <h3>Customer Reviews</h3>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>John Doe</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9734;</span>
+                </div>
+            </div>
+            <small class="text-muted">March 25, 2024</small>
+        </div>
+        <p>A fantastic read! The story is captivating and the characters are well-developed. I couldn't put it down.</p>
+    </div>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>Jane Smith</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                </div>
+            </div>
+            <small class="text-muted">April 10, 2024</small>
+        </div>
+        <p>An amazing continuation of the Harry Potter series. The plot twists are incredible and keep you on the edge of your seat!</p>
+    </div>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>Bob Johnson</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9734;</span>
+                </div>
+            </div>
+            <small class="text-muted">May 5, 2024</small>
+        </div>
+        <p>Great book! The second year at Hogwarts is just as magical and thrilling as the first.</p>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 BookStore. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

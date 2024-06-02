@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function c(){
+            alert("your order is accepted")
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BookStore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cat">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="form-inline ml-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+<!-- Book Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-196508f7dda8c53c07e4a08c423d8be8.webp" class="img-fluid" alt="Book 1">
+        </div>
+        <div class="col-md-8">
+            <h2>The Kite Runner</h2>
+            <p>Author : Khaled Hosseini</p>
+            <p>Price: $15.99</p>
+            <p>The Kite Runner is the first novel by Afghan-American author Khaled Hosseini.[1] Published in 2003 by Riverhead Books, it tells the story of Amir, a young boy from the Wazir Akbar Khan district of Kabul. The story is set against a backdrop of tumultuous events, from the fall of Afghanistan's monarchy through the Soviet invasion, the exodus of refugees to Pakistan and the United States, and the rise of the Taliban regime.
+
+                Hosseini has commented that he considers The Kite Runner to be a father-son relationship story, emphasizing the familial aspects of the narrative, an element that he continued to use in his later works.[2] Themes of guilt and redemption feature prominently in the novel,[3] with a pivotal scene depicting an act of sexual assault inflicted upon Amir's friend Hassan, which Amir fails to prevent, and which ends their friendship. The latter half of the book centers on Amir's attempts to atone for this transgression by rescuing Hassan's son two decades later.</p>
+            <button class="btn btn-primary"onclick="c()">Buy Now</button>
+        </div>
+    </div>
+</div>
+<div id="cat">
+
+</div>
+  <!-- Customer Reviews -->
+  <div class="mt-5">
+    <h3>Customer Reviews</h3>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>John Doe</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9734;</span>
+                </div>
+            </div>
+            <small class="text-muted">March 25, 2024</small>
+        </div>
+        <p>A fantastic read! The story is captivating and the characters are well-developed. I couldn't put it down.</p>
+    </div>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>Jane Smith</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                </div>
+            </div>
+            <small class="text-muted">April 10, 2024</small>
+        </div>
+        <p>An amazing continuation of the Harry Potter series. The plot twists are incredible and keep you on the edge of your seat!</p>
+    </div>
+    <div class="review mt-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h5>Bob Johnson</h5>
+                <div class="rating">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9734;</span>
+                </div>
+            </div>
+            <small class="text-muted">May 5, 2024</small>
+        </div>
+        <p>Great book! The second year at Hogwarts is just as magical and thrilling as the first.</p>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 BookStore. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

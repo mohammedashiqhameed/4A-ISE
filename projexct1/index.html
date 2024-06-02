@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function add()
+        {
+            alert("Your book is added to cart");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sapna Book House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#child">Books for children</a></li>
+                      <li><a class="dropdown-item" href="#horror">Horror Books</a></li>
+                     
+                      
+                    </ul>
+                  </li>
+                <li class="nav-item"><a class="nav-link" href="#footer">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <form class="form-inline ml-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A77b41724-a1a7-464f-8135-fc7e0f7cec12?source=next-article&fit=scale-down&quality=highest&width=1440&dpr=1" class="d-block w-100" alt="Featured Book 1">
+                <div class="carousel-caption d-none d-md-block">
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?cs=srgb&dl=pexels-pixabay-256455.jpg&fm=jpg" class="d-block w-100" alt="Featured Book 2">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://c1.wallpaperflare.com/preview/207/70/369/library-bookshop-books-antiquariat.jpg" class="d-block w-100" alt="Featured Book 3">
+                <div class="carousel-caption d-none d-md-block">
+                    
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Book Cards -->
+    <div id="books">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/51xwFZin4pL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">A story of struggle</h5>
+                        <p class="card-text">Ashok kumawat</p>
+                        <p class="card-text">$10.99</p>
+                        <a href="book1.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-secondary" onclick="add()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/C4D12AQE7F4tcybmWpg/article-inline_image-shrink_1000_1488/0/1559296429023?e=1722470400&v=beta&t=2-35DR3yyKtFfVRgVhegrYon5Gy6E7HtA_BDodGExIA" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Harry Potter and the chamber of secrets</h5>
+                        <p class="card-text">J.K.Rowling</p>
+                        <p class="card-text">$12.99</p>
+                        <a href="book2.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-secondary"onclick="add()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-196508f7dda8c53c07e4a08c423d8be8.webp" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">The Knite Runner</h5>
+                        <p class="card-text">Khaled Hosseini</p>
+                        <p class="card-text">$15.99</p>
+                        <a href="book3.html" class="btn btn-primary">View Details</a>
+                        <button class="btn btn-secondary"onclick="add()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="category">
+
+    <!-- Categories Section -->
+    <div class="container mt-5">
+       <div id="child"
+        <!-- Children Category -->
+        <div class="category-section mb-5">
+            <h2>Books for children</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://media1.popsugar-assets.com/files/thumbor/TAl3ppJPztqD8zoPnh-QFw3ePSw=/fit-in/525x800/filters:format_auto():upscale()/2013/01/05/1/192/1922664/70e2c08b0cb9ff8a_charlottes_web.JPG" class="card-img-top" alt="Children Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Charlottes Web</h5>
+                            <p class="card-text">Author : E. B. White </p>
+                            <p class="card-text">Price: $9.99</p>
+                            <p>Charlotte's Web is a story of friendship, courage, and self-sacrifice. Wilbur is a pig who finds out that he is destined for slaughter. His friend, a spider named Charlotte who lives in the doorway of his pigpen, determines to save him; she accomplishes this by spinning words about him in her web.</p>
+                            <a class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.guim.co.uk/img/media/f42eab10c78f349f9ba8d6e3e8b8dc5e98f2ecd2/0_0_326_499/master/326.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=e944d16b0a8a8f744e4ab3e7eded92ed">
+                        <div class="card-body">
+                            <h5 class="card-title">The Strange Worlds</h5>
+                            <p class="card-text">Author : L. D. Lapinski </p>
+                            <p class="card-text">Price: $11.99</p>
+                            <p>Three generations of a legendary family of explorers will find themselves in an uncharted land with strange creatures. If they want to survive from the numerous dangers, they must bridge their differences and work together.</p>
+                            <a  class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/719uQHJWBvL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Children Book 3" height="525">
+                        <div class="card-body">
+                            <h5 class="card-title">Children Book Of Magic</h5>
+                            <p class="card-text">Author : MacLachlan</p>
+                            <p class="card-text">Price: $8.99</p>
+                            <p>The Children's Book of Magic demystifies the mystical by tracing the history of magic from ancient Egypt to the present day exploring the secrets behind some of the greatest magicians from Harry Houdini to Albertus Magnus.</p>
+                            <a  class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<div id="horror"
+        <!-- Adults Category -->
+        <div class="category-section mb-5">
+            <h2>Horror Books</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/715jjfXVBlL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Adult Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Forest</h5>
+                            <p class="card-text">Author: Author Name</p>
+                            <p class="card-text">Price: $14.99</p>
+                            <p>The Black Forest isn't really haunted, but there are tales and legends that can be quite creepy. There are tales of a headless horseman riding his great white steed through the dense forest. There are stories of a forest king who kidnaps women to take them to his underwater lair where he lives among the nymphs.</p>
+                            <a  class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/51IzeRM6KkL.jpg" class="card-img-top" alt="Adult Book 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Night Of Terror</h5>
+                            <p class="card-text">Author: Author Name</p>
+                            <p class="card-text">Price: $13.99</p>
+                            <p>Night of Terror experiments with the flow of time. The novel follows Hedayat Ismaili, a university teacher who is experiencing the breakdown of his marriage as well as a midlife crisis, as he grapples with the political charged atmosphere of Iran, on the brink of revolution.</p>
+                            <a  class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://assets3.thrillist.com/v1/image/2709174/792x1204/scale;webp=auto;jpeg_quality=60.jpg" class="card-img-top" alt="Adult Book 3" >
+                        <div class="card-body">
+                            <h5 class="card-title">The Exorcist</h5>
+                            <p class="card-text">Author : William Peter Blatty</p>
+                            <p class="card-text">Price: $15.99</p>
+                            <p>One of the most profitable horror movies ever made, this tale of an exorcism is based loosely on actual events. When young Regan (Linda Blair) starts acting odd -- levitating, speaking in tongues -- her worried mother (Ellen Burstyn) seeks medical help, only to hit a dead end.</p>
+                            
+                            <a  class="btn btn-primary"onclick="add()">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="footer"
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2024 BookStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
